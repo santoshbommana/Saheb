@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+     
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Menu Starter</h3>
+  <ion-fab top left >
+      <button ion-fab ><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-content padding>
+  <ion-item>
+      <ion-label>Daenerys Targaryen</ion-label>
+      <ion-checkbox color="primary" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-label>Sansa Stark</ion-label>
+        <ion-checkbox color="primary" ></ion-checkbox>
+      </ion-item>
+    <ion-item>
+      <ion-label>Arya Stark</ion-label>
+      <ion-checkbox disabled="true"></ion-checkbox>
+    </ion-item>
+  <ion-list radio-group>
+      <ion-list-header>
+        Language
+      </ion-list-header>
+    
+      <ion-item>
+        <ion-label>Go</ion-label>
+        <ion-radio checked="true" value="go"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Rust</ion-label>
+        <ion-radio value="rust"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Python</ion-label>
+        <ion-radio value="python" disabled="true"></ion-radio>
+      </ion-item>
+    </ion-list>
+    
+<ion-item>
+    <ion-range min="0" max="100" pin="true" [(ngModel)]="warmth" color="danger">
+      <ion-icon range-left small name="sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+  <ion-list>
+      <ion-item>
+        <ion-label>Gaming</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-slides pager style="height: 50%;">
+
+        <ion-slide style="border-color: green;border-width: 2px">
+          <h2>Slide 1</h2>
+        </ion-slide>
+      
+        <ion-slide style="border-color: blue">
+          <h2>Slide 2</h2>
+        </ion-slide>
+      
+        <ion-slide style="border-color: red">
+          <h2>Slide 3</h2>
+        </ion-slide>
+      
+      </ion-slides>
+      <div padding>
+          <button ion-button color="primary" block (click)="presentToast()">Show Tost</button>
+        </div>
+        <ion-item>
+          <ion-label>Sam</ion-label>
+          <ion-toggle disabled checked="false"></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sam1</ion-label>
+          <ion-toggle  checked="false"></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sam2</ion-label>
+          <ion-toggle color="danger"  checked="true"></ion-toggle>
+        </ion-item>
+        
+<ion-content padding class="action-sheets-basic-page">
+  <button ion-button block (click)="openMenu()">
+    Show Action Sheet
+  </button>
+</ion-content>
+</ion-content>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p>Ash, Misty, Brock</p>
+    <ion-buttons end>
+      <button ion-button icon-end color="primary">
+        Send
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
